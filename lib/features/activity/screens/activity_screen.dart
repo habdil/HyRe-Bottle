@@ -7,7 +7,7 @@ import '../widgets/time_period_selector.dart';
 import '../../../shared/widgets/custom_bottom_nav.dart';
 
 class ActivityScreen extends StatelessWidget {
-  const ActivityScreen({Key? key}) : super(key: key);
+  const ActivityScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

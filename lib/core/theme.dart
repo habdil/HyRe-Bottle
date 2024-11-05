@@ -27,11 +27,11 @@ class AppTheme {
     brightness: Brightness.light,
     
     // Color Scheme
-    colorScheme: ColorScheme.light(
+    colorScheme: const ColorScheme.light(
       primary: primaryColor,
       secondary: secondaryColor,
       error: errorColor,
-      background: backgroundColor,
+      surface: backgroundColor,
     ),
 
     // Typography
