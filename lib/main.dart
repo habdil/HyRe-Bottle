@@ -174,9 +174,9 @@
 //   }
 // }
 
-// untuk discover
+// untuk profile
 import 'package:flutter/material.dart';
-import 'package:smart_botol/features/discover/screens/discover_screen.dart';
+import 'package:smart_botol/features/profile/screens/profile_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -194,7 +194,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFB5E8F7),
         fontFamily: 'Poppins',
       ),
-      home:  DiscoverScreen(),
+      home:  ProfileScreen(),
     );
   }
 }
