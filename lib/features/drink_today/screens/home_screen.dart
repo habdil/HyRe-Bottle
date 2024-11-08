@@ -69,7 +69,6 @@
 // }
 import 'package:flutter/material.dart';
 import 'package:smart_botol/core/theme.dart';
-import 'package:smart_botol/shared/widgets/custom_bottom_nav.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -125,25 +124,6 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 16),
                 Icon(Icons.add, size: 32, color: AppTheme.textPrimary),
               ],
-            ),
-            CustomBottomNav(
-              selectedIndex: 0, // Sesuaikan index dengan posisi "Home"
-              onItemTapped: (index) {
-                switch (index) {
-                  case 0:
-                    Navigator.pushReplacementNamed(context, '/home');
-                    break;
-                  case 1:
-                    Navigator.pushReplacementNamed(context, '/discover');
-                    break;
-                  case 2:
-                    Navigator.pushReplacementNamed(context, '/activity');
-                    break;
-                  case 3:
-                    Navigator.pushReplacementNamed(context, '/profile');
-                    break;
-                }
-              },
             ),
           ],
         ),

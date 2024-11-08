@@ -45,7 +45,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_botol/features/discover/widgets/infor_card.dart';
 import '../widgets/info_card.dart';
-import 'package:smart_botol/shared/widgets/custom_bottom_nav.dart';
 
 class DiscoverScreen extends StatelessWidget {
   @override
@@ -82,25 +81,6 @@ class DiscoverScreen extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      bottomNavigationBar: CustomBottomNav(
-        selectedIndex: 1, // Sesuaikan index dengan posisi "Discover"
-        onItemTapped: (index) {
-          switch (index) {
-            case 0:
-              Navigator.pushReplacementNamed(context, '/home');
-              break;
-            case 1:
-              Navigator.pushReplacementNamed(context, '/discover');
-              break;
-            case 2:
-              Navigator.pushReplacementNamed(context, '/activity');
-              break;
-            case 3:
-              Navigator.pushReplacementNamed(context, '/profile');
-              break;
-          }
-        },
       ),
     );
   }

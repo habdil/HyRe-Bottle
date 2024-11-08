@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../widgets/activity_chart.dart';
 import '../widgets/history_card.dart';
 import '../widgets/time_period_selector.dart';
-import '../../../shared/widgets/custom_bottom_nav.dart';
 
 class ActivityScreen extends StatelessWidget {
   const ActivityScreen({super.key});
@@ -80,26 +79,6 @@ class ActivityScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: CustomBottomNav(
-        selectedIndex: 2, // Menandakan index untuk halaman "Activity"
-        onItemTapped: (index) {
-          // Logic untuk berpindah halaman berdasarkan index
-          switch (index) {
-            case 0:
-              Navigator.pushReplacementNamed(context, '/drink');
-              break;
-            case 1:
-              Navigator.pushReplacementNamed(context, '/discover');
-              break;
-            case 2:
-              Navigator.pushReplacementNamed(context, '/activity');
-              break;
-            case 3:
-              Navigator.pushReplacementNamed(context, '/profile');
-              break;
-          }
-        },
       ),
     );
   }

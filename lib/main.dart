@@ -245,7 +245,6 @@ class LoginScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Setelah login berhasil, pindah ke MainScreen
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const MainScreen()),
@@ -271,10 +270,10 @@ class _MainScreenState extends State<MainScreen> {
 
   // Daftar halaman sesuai fitur
   final List<Widget> _pages = [
-    ProfileScreen(),
-    DiscoverScreen(),
-    const ActivityScreen(),
     const HomeScreen(),
+    const ActivityScreen(),
+    DiscoverScreen(),
+    ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {

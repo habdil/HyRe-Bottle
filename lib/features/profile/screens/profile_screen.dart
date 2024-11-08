@@ -56,7 +56,6 @@
 // }
 import 'package:flutter/material.dart';
 import 'package:smart_botol/features/profile/widgets/profile_option_button.dart';
-import 'package:smart_botol/shared/widgets/custom_bottom_nav.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -105,25 +104,6 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      bottomNavigationBar: CustomBottomNav(
-        selectedIndex: 3, // Sesuaikan index dengan posisi "Profile"
-        onItemTapped: (index) {
-          switch (index) {
-            case 0:
-              Navigator.pushReplacementNamed(context, '/home');
-              break;
-            case 1:
-              Navigator.pushReplacementNamed(context, '/discover');
-              break;
-            case 2:
-              Navigator.pushReplacementNamed(context, '/activity');
-              break;
-            case 3:
-              Navigator.pushReplacementNamed(context, '/profile');
-              break;
-          }
-        },
       ),
     );
   }

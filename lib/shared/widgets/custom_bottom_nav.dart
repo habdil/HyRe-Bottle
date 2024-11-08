@@ -96,10 +96,10 @@ class CustomBottomNav extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _buildNavItem(Icons.person_outline, 0),
-          _buildNavItem(Icons.search, 1),
-          _buildNavItem(Icons.bar_chart_outlined, 2),
-          _buildNavItem(Icons.water_drop, 3),
+          _buildNavItem(Icons.water_drop, 0),
+          _buildNavItem(Icons.bar_chart_outlined, 1),
+          _buildNavItem(Icons.search, 2),
+          _buildNavItem(Icons.person_outline, 3),
         ],
       ),
     );
